@@ -31,6 +31,7 @@ from training import train_sgd
 #TASK 1: LOADING THE DATASET
 
 list1 = []
+#NB change path to your location
 with open('/content/drive/MyDrive/Databases and data Science/netflix_challenge/combined_data_1.txt', encoding='utf8') as f:
     for line in f:
         list1.append(line)
@@ -153,7 +154,7 @@ plt.show()
 
 #-------------- Testing Accuracy with Training and Test Set--------------------------
 
-flag = False
+flag = False  #set True if you want to compute accuracy test
 if flag:
 
     print("Splitting in Training and Test dataset")
